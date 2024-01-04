@@ -1,0 +1,164 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px rgb(237, 237, 237);
+  z-index: 1000;
+}
+.header .logoDiv .logo {
+  width: 75px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    position: absolute;
+    background: var(--secondaryColor);
+    width: 88%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    transition: 0.3s ease;
+    z-index: 2000;
+  }
+  .header .navbar .closeIcon {
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 35px;
+  }
+  .header .navbar .closeIcon:hover {
+    color: red;
+  }
+  .header .menu {
+    align-items: center;
+    flex-direction: columm;
+    gap: 25px;
+  }
+  .header .menu .listItem {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .header .menu .listItem a {
+    font-size: 15px;
+  }
+  .header .menu .listItem:hover {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    transition: 0.3s ease;
+  }
+  .header .menu .listItem:hover a {
+    color: var(--whiteColor);
+  }
+}
+.header .signUp .text {
+  padding: 3px 10px;
+  background-color: var(--primaryColor);
+  border-radius: 3px;
+  color: var(--whiteColor);
+  cursor: pointer;
+  font-size: 14px;
+}
+.header .signUp .text:hover {
+  background-color: var(--secondaryColor);
+  color: var(--blackColor);
+}
+.header .signUp .toggleNavbarIcon {
+  background: none;
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 25px;
+}
+.header .showNavbar {
+  top: 7rem;
+  transition: 0.5s ease;
+}
+
+.addBg {
+  background: var(--secondaryColor);
+  box-shadow: none;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 520px) {
+  .header .logoDiv img {
+    width: 30px;
+  }
+  .header .signUp .text {
+    padding: 6px;
+    font-size: 16px;
+  }
+  .header .signUp .toggleNavbarIcon {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .header .navbar .closeIcon {
+    display: none;
+  }
+  .header .navbar .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .navbar .listItem {
+    padding: 0.3rem 1rem;
+    border-radius: 3px;
+  }
+  .header .navbar .listItem a {
+    color: var(--textColor);
+    font-size: 15px;
+  }
+  .header .navbar .listItem:hover {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    transition: 0.3s ease;
+  }
+  .header .navbar .listItem:hover a {
+    color: var(--whiteColor);
+  }
+  .signUp .text {
+    padding: 6px 10px;
+  }
+  .signUp .toggleNavbarIcon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1064px) {
+  .header {
+    padding: 2rem 7rem;
+  }
+  .header .navbar .menu .listItem a {
+    font-size: 20px;
+  }
+  .header .signUp .text {
+    padding: 6px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header .navbar .menu .listItem a {
+    margin: 0 0.8rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

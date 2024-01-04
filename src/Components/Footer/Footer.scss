@@ -1,0 +1,112 @@
+:root {
+    --primaryColor: #7a63f1;
+    --secondaryColor: #ebe8fc;
+    --textColor: #a3a3a3;
+    --greyColor: #f4f4f4;
+    --whiteColor: #f5f4fa;
+    --blackColor: #434344;
+}
+
+.footer {
+    padding-top: 4rem;
+
+    .footerContainer {
+        .footerMenuDiv {
+
+            padding: 2rem;
+            background: var(--greyColor);
+            border-radius: 10px;
+            gap: 1.5rem;
+
+            .singleGrid {
+                .footerTitle {
+                    display: block;
+                    padding-bottom: .5rem;
+                    font-size: 16px;
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                .footerUl {
+                    gap: 5px;
+
+                    .footerLi {
+                        color: var(--textColor);
+
+                        &:hover {
+                            color: var(--blackColor);
+                            transform: translateX(5px);
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .lowerSection {
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+//media query for review section 
+@media screen and (max-width: 520px) {
+    .footer {
+        .footerContainer {
+            .footerMenuDiv {
+                grid-template-columns: repeat(2, 1fr);
+
+                .singleGrid {
+                    .footerTitle {
+                        font-size: 17px;
+                    }
+
+                    .footerUl {
+                        gap: 5px;
+
+                        .footerLi {
+                            color: var(--textColor);
+                        }
+                    }
+                }
+            }
+
+            .lowerSection {
+                display: grid;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+
+
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer {
+        .footerContainer {
+            .footerMenuDiv {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+
+        }
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .footer {
+        .footerContainer {
+            padding: 2rem 0;
+            .footerMenuDiv {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+
+        }
+        
+
+    }
+}

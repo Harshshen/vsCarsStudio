@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@100&family=Raleway:wght@100&family=Rubik+Scribble&family=Titillium+Web:ital,wght@0,200;0,400;1,400;1,600;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  color: var(--textColor);
+  line-height: 1.4rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  background: var(--primaryColor);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--whiteColor);
+  font-size: 12px;
+}
+.primaryBtn:hover {
+  background: var(--secondaryColor);
+  color: var(--blackColor);
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.secTitle {
+  color: var(--blackColor);
+  font-size: 20px;
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+}
+::-moz-selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+::selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--secondaryColor);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 3px;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,112 @@
+:root{
+    --primaryColor: #7a63f1;
+    --secondaryColor: #ebe8fc;
+    --textColor: #a3a3a3;
+    --greyColor: #f4f4f4;
+    --whiteColor: #f5f4fa;
+    --blackColor: #434344;
+}
+
+.sellers{
+    background: var(--greyColor);
+    
+    .secContainer{
+        margin: 2rem inherit;
+
+        .sellersContainer{
+            .singleSeller{
+                padding: .5rem 0;
+                border-radius: 3px;
+                gap: 1rem;
+                transition: .3s ease-in-out;
+
+                .imgDiv{
+                    height: 100px;
+                    width: 100px ;
+                    object-fit: cover;
+                    padding: 10px;
+                    background: rgb(237, 237, 237);
+                    border-radius: 3px;
+                }
+
+                .infoDiv{
+                    .name{
+                        color: var(--blackColor);
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+
+                &:hover{
+                    background:rgb(237, 237, 237);
+                    padding: .5rem;
+
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        padding: 10px;
+                        border-radius: 3px;
+                        background: rgb(237, 237, 237);
+                    }
+                }
+
+            }
+        }
+
+        
+    }
+}
+
+//media queries to make sellers responsive
+@media screen and (min-width:520px) {
+    .sellers{
+        
+        .secContainer{
+            .secHeading{
+                margin-top: 2rem ;
+                .secTitle{
+                    font-size: 22px;
+                }
+
+                p{
+                    font-size: 20px;
+                }
+
+                
+            }
+            .sellersContainer{
+                grid-template-columns: repeat(2,1fr);
+                gap: 2.5rem;
+
+                .singleSeller{
+                    gap: 1.5rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width:840px) {
+    .sellers{
+        
+        .secContainer{
+            .secHeading{
+          
+                .secTitle{
+                    font-size: 30px;
+                }
+
+                p{
+                    font-size: 25px;
+                }
+
+                
+            }
+            
+        }
+    }
+    
+}

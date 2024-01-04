@@ -1,0 +1,75 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+}
+
+.sellers {
+  background: var(--greyColor);
+}
+.sellers .secContainer {
+  margin: 2rem inherit;
+}
+.sellers .secContainer .sellersContainer .singleSeller {
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  gap: 1rem;
+  transition: 0.3s ease-in-out;
+}
+.sellers .secContainer .sellersContainer .singleSeller .imgDiv {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  background: rgb(237, 237, 237);
+  border-radius: 3px;
+}
+.sellers .secContainer .sellersContainer .singleSeller .infoDiv .name {
+  color: var(--blackColor);
+  font-size: 30px;
+}
+.sellers .secContainer .sellersContainer .singleSeller .infoDiv p {
+  font-size: 14px;
+}
+.sellers .secContainer .sellersContainer .singleSeller:hover {
+  background: rgb(237, 237, 237);
+  padding: 0.5rem;
+}
+.sellers .secContainer .sellersContainer .singleSeller:hover img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 3px;
+  background: rgb(237, 237, 237);
+}
+
+@media screen and (min-width: 520px) {
+  .sellers .secContainer .secHeading {
+    margin-top: 2rem;
+  }
+  .sellers .secContainer .secHeading .secTitle {
+    font-size: 22px;
+  }
+  .sellers .secContainer .secHeading p {
+    font-size: 20px;
+  }
+  .sellers .secContainer .sellersContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  .sellers .secContainer .sellersContainer .singleSeller {
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 840px) {
+  .sellers .secContainer .secHeading .secTitle {
+    font-size: 30px;
+  }
+  .sellers .secContainer .secHeading p {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=Sellers.css.map */

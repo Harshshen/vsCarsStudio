@@ -1,0 +1,101 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+}
+
+.home {
+  padding-top: 8rem;
+}
+
+.seeContainer {
+  padding: 0 1.5rem;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+}
+.seeContainer .homeText .homeSpan {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 15px;
+}
+.seeContainer .homeText .homeTitle {
+  color: var(--blackColor);
+  font-weight: 700;
+  font-size: 30px;
+}
+.seeContainer .homeText .btns {
+  gap: 1.5rem;
+  justify-content: center;
+}
+.seeContainer .homeText .btn {
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
+.seeContainer .homeText .btn:hover {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.seeContainer .homeText .btn:nth-child(2):hover {
+  background: var(--whiteColor);
+  color: var(--textColor);
+}
+.seeContainer .homeImage {
+  margin: auto;
+}
+
+@media screen and (min-width: 520px) {
+  .home .seeContainer .homeText .homeSpan {
+    font-size: 18px;
+  }
+  .home .seeContainer .homeText .homeTitle {
+    font-size: 35px;
+  }
+  .home .seeContainer .homeText .btns .btn {
+    font-size: 14px;
+  }
+  .home .seeContainer .homeImage {
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 720px) {
+  .home {
+    padding-top: 10rem;
+  }
+  .home .seeContainer {
+    gap: 2.5rem;
+  }
+  .home .seeContainer .homeText .homeSpan {
+    font-size: 21px;
+  }
+  .home .seeContainer .homeText .homeTitle {
+    font-size: 45px;
+  }
+  .home .seeContainer .homeText .btns {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .home {
+    padding-top: 12rem;
+  }
+  .home .seeContainer {
+    gap: 3rem;
+  }
+  .home .seeContainer .homeText .homeSpan {
+    font-size: 25px;
+  }
+  .home .seeContainer .homeText .homeTitle {
+    font-size: 55px;
+  }
+  .home .seeContainer .homeText .btns .btn {
+    font-size: 16px;
+    padding: 1rem 2rem;
+  }
+}/*# sourceMappingURL=Head.css.map */
